@@ -1,6 +1,8 @@
 import day01.test_day01 as day1
 import day02.test_day02 as day2
 import day03.test_day03 as day3
+import day04.test_day04 as day4
+
 
 def test_day01():
     #part one
@@ -28,7 +30,8 @@ def test_day03():
 def main():
     #test_day01()
     #test_day02()
-    test_day03()
+    #test_day03()
+    day4.test_board_functions()
 
 
 
