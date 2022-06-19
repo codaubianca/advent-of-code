@@ -29,19 +29,21 @@ def _find_low_points(lines: List[List[int]]):
         #print("new line")
         for j in range(1, column_limit):
             minima = min([padded_lines[i-1][j], padded_lines[i+1][j], padded_lines[i][j-1], padded_lines[i][j+1]])
-            #print(f"elem: {padded_lines[i][j]}, minim: {minima}")
+            print(f"elem: {padded_lines[i][j]}, minim: {minima}")
             if padded_lines[i][j] < minima:
-                low_points += [padded_lines[i][j]]
-                #print(f"i: {i}, j: {j}, elem: {padded_lines[i][j]}")
+                low_points += [(i-1, j-1)]
+                print(f"i: {i}, j: {j}, elem: {padded_lines[i][j]}")
 
     return low_points
 
 def  calculate_risk(lines: List[List[int]]) -> int:
     low_points = _find_low_points(lines)
-    return sum([i + 1 for i in low_points])
+    return sum([lines[i][j] + 1 for (i, j) in low_points])
+
+ 
 
 lines = read_file("inputs/day09.txt")
-lines = parse_lines(lines)
-#lines = parse_lines(TEST.split('\n'))
+#lines = parse_lines(lines)
+lines = parse_lines(TEST.split('\n'))
 total_risk = calculate_risk(lines)
 print(f"The sum of the risk levels of all points is {total_risk}")
