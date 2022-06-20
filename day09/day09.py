@@ -1,5 +1,3 @@
-from audioop import mul
-from lib2to3.pgen2.literals import simple_escapes
 from typing import List, Tuple
 
 TEST = "2199943210\n3987894921\n9856789892\n8767896789\n9899965678"
