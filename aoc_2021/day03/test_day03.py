@@ -1,5 +1,5 @@
 import day03.day03 as day03
-import utils 
+import utils.utils
 
 TEST = [
         "00100",

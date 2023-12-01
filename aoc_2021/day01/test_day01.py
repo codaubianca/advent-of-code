@@ -1,5 +1,5 @@
-import utils
-import day01.day01 as day01
+import utils.utils
+import aoc_2021.day01.day01 as day01
 
 TEST_ONE = ["199", "200", "208", "210"]
 TEST_TWO = ["199", "200", "208", "210", "34", "35"]

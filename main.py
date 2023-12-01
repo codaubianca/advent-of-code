@@ -1,7 +1,7 @@
-import day01.test_day01 as day1
-import day02.test_day02 as day2
-import day03.test_day03 as day3
-import day04.test_day04 as day4
+import aoc_2021.day01.test_day01 as day1
+import aoc_2021.day02.test_day02 as day2
+import aoc_2021.day03.test_day03 as day3
+import aoc_2021.day04.test_day04 as day4
 
 
 def test_day01():

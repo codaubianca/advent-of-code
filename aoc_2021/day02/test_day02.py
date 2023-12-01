@@ -1,4 +1,4 @@
-import utils
+import utils.utils
 import day02.day02 as day02
 
 TEST = [("forward", 5), ("down", 5), ("forward", 8), ("up", 3), ("down", 8), ("forward", 2)]
