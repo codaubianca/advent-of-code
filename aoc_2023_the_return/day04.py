@@ -49,3 +49,4 @@ print("Total number of points in the puzzle:", part1(puzzle))
 
 print("Total number of scratchcards in the given example is 30: ", part2(example1)==30)
 print("Total number of scratchcards in the puzzle:", part2(puzzle))
+
